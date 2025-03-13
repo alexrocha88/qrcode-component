@@ -1,57 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 body {
-    font-family: 'Outfit', 'sans-serif';
-    background-color: hsl(212, 45%, 89%);
-    min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+main {
+    width: 100wh;
+    height: 100vh;
     display: flex;
-   
-}
-
-p {
-    font-size: 15px;
-    font-weight: 400;
-    color: hsl(216, 15%, 48%);
-}
-
-.container {
-    max-width: 350px;      /* Define a largura máxima do container */
-    width: 100%;           /* Faz o container ocupar 100% da largura disponível até 350px */
-    display: flex;         /* Habilita o flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center;   /* Centraliza o conteúdo verticalmente */
-    text-align: center;    /* Centraliza o texto dentro dos elementos */
-    margin: 0 auto;        /* Adiciona margem automática para centralizar o container na página */
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slate-300);
 }
 
 .card {
-    background-color:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 215px;
+    background-color: var(--white);
     border-radius: 15px;
-    padding: 17px;
-    margin: 0, 1rem;
+    padding: 14px;
+    text-align: center;
+    box-shadow: 1px 16px 48px 2px #00000015;
 }
 
-.card > img {
+img {
+    width: 100%;
+    height: auto;
     border-radius: 15px;
 }
 
-
-.text {
-    padding: 22px, 10px;
+.text-container {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
-.text h2 {
-    color: hsl(218, 44%, 22%);
-    padding-bottom: 15px;
+h1 {
+    color: var(--slate-900);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
 }
 
+h2 {
+    font-size: 12px;
+    color: var(--slate-500);
+    font-weight: 400;
+}
 
-
-
-
+@media only screen and (min-width: 1280px) {
+    .card {
+      max-width: 290px;
+    }
+  
+    .text-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 15px;
+    }
+  }
