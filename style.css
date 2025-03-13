@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', 'sans-serif';
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display: flex;
+   
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+}
+
+.container {
+    max-width: 350px;      /* Define a largura máxima do container */
+    width: 100%;           /* Faz o container ocupar 100% da largura disponível até 350px */
+    display: flex;         /* Habilita o flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;   /* Centraliza o conteúdo verticalmente */
+    text-align: center;    /* Centraliza o texto dentro dos elementos */
+    margin: 0 auto;        /* Adiciona margem automática para centralizar o container na página */
+
+}
+
+.card {
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 17px;
+    margin: 0, 1rem;
+}
+
+.card > img {
+    border-radius: 15px;
+}
+
+
+.text {
+    padding: 22px, 10px;
+}
+
+.text h2 {
+    color: hsl(218, 44%, 22%);
+    padding-bottom: 15px;
+}
+
+
+
+
+
